@@ -31,3 +31,9 @@ function toggleNav() {
     navAnimation('in', 'out');
   }
 }
+
+// Event Listeners
+menuBars.addEventListener('click', toggleNav);
+navItems.forEach((nav) => {
+  nav.addEventListener('click', toggleNav);
+});
